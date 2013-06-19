@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1 (64-bit)
+# Build 117799 by hdbuild on Thu Feb 17 11:42:17 PST 2011
+# Start of session at: Wed Feb 20 16:00:19 2013
+# Process ID: 6956
+# Log file: F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/planAhead_run_1/planAhead.log
+# Journal file: F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [HD-Licensing 0] Attempting to get a license: PlanAhead
+INFO: [HD-Licensing 1] Got a license: PlanAhead
+INFO: [HD-Licensing 3] Your PlanAhead license expires in -112 day(s)
+INFO: [HD-ArchReader 0] Loading parts and site information from C:\Xilinx\13.1\ISE_DS\PlanAhead\parts\arch.xml
+INFO: [HD-RTPRIM 0] Parsing RTL primitives file 'C:\Xilinx\13.1\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml'
+INFO: [HD-RTPRIM 1] Finished Parsing RTL primitives file 'C:\Xilinx\13.1\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml'
+start_gui -source {F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/pa.fromNetlist.tcl}
+# create_project -name MIPS -dir "F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/planAhead_run_2" -part xc6slx45csg324-3
+Parsing template File [C:\Xilinx\13.1\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [C:\Xilinx\13.1\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Parsing template File [C:\Xilinx\13.1\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [C:\Xilinx\13.1\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [C:\Xilinx\13.1\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [C:\Xilinx\13.1\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/MIPS_PROCESSOR.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS} }
+# set_param project.paUcfFile  "MIPS_PROCESSOR.ucf"
+# add_files "MIPS_PROCESSOR.ucf" -fileset [get_property constrset [current_run]]
+# open_netlist_design
+INFO: Design is defaulting to constrset part: xc6slx45csg324-3
+Release 13.1 - ngc2edif O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design MIPS_PROCESSOR.ngc ...
+WARNING:NetListWriters:298 - No output is written to MIPS_PROCESSOR.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file MIPS_PROCESSOR.edif ...
+ngc2edif: Total memory usage is 70092 kilobytes
+
+Parsing EDIF File [.\.Xil-PlanAhead-6956-Laurent-PC\ngc2edif\MIPS_PROCESSOR.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-6956-Laurent-PC\ngc2edif\MIPS_PROCESSOR.edif]
+Release 13.1 - ngc2edif O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design IMem.ngc ...
+WARNING:NetListWriters:298 - No output is written to IMem.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file IMem.edif ...
+ngc2edif: Total memory usage is 70092 kilobytes
+
+Reading core file 'F:\EHB\Courses\Computer architectuur\FPGA\MIPS\MIPS\IMem.ngc' for (cell view 'IMem', library 'MIPS_PROCESSOR_lib', file 'MIPS_PROCESSOR.ngc')
+Parsing EDIF File [.\.Xil-PlanAhead-6956-Laurent-PC\ngc2edif\IMem.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-6956-Laurent-PC\ngc2edif\IMem.edif]
+INFO: [HD-Unisim Transformer 0] Analyzing Unisim elements for replacement
+INFO: [HD-Unisim Transformer 1] No Unisim elements were transformed.
+WARN: [HD-NETLIST 3] Netlist 'MIPS_PROCESSOR' is not ideal for floorplanning, since the cellview 'MIPS_PROCESSOR' defined in file 'MIPS_PROCESSOR.ngc' contains large number of primitives. Please consider enabling hierarchy in synthesis before floorplan. You can enable hierarchy in XST by setting '-keep_hierarchy=yes' or '-netlist_hierarchy=rebuilt' flags.
+INFO: [HD-ArchReader 7] Loading clock regions from C:/Xilinx/13.1/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockRegion.xml
+INFO: [HD-ArchReader 8] Loading clock buffers from C:/Xilinx/13.1/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockBuffers.xml
+INFO: [HD-ArchReader 13] Loading package pin functions from C:/Xilinx/13.1/ISE_DS/PlanAhead/parts/xilinx/spartan6/PinFunctions.xml...
+INFO: [HD-ArchReader 3] Loading package from C:/Xilinx/13.1/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx45/csg324/Package.xml
+INFO: [HD-ArchReader 4] Loading io standards from C:/Xilinx/13.1/ISE_DS/PlanAhead/./parts/xilinx/spartan6/IOStandards.xml
+INFO: [HD-ArchReader 12] Loading device configuration modes from C:/Xilinx/13.1/ISE_DS/PlanAhead/parts/xilinx/spartan6/ConfigModes.xml
+INFO: [HD-GDRC 0] Loading list of drcs for the architecture : C:/Xilinx/13.1/ISE_DS/PlanAhead/./parts/xilinx/spartan6/drc.xml
+INFO: [HD-LIB 0] Reading timing library C:/Xilinx/13.1/ISE_DS/PlanAhead/./parts/xilinx/spartan6/spartan6.lib .
+INFO: [HD-LIB 1] Done reading timing library C:/Xilinx/13.1/ISE_DS/PlanAhead/./parts/xilinx/spartan6/spartan6.lib .
+Parsing UCF File [F:\EHB\Courses\Computer architectuur\FPGA\MIPS\MIPS\MIPS_PROCESSOR.ucf]
+Finished Parsing UCF File [F:\EHB\Courses\Computer architectuur\FPGA\MIPS\MIPS\MIPS_PROCESSOR.ucf]
+Time (s): 12.293w
+Time (s): 18.657w
+exit
+INFO: [HD-Application 0] Exiting PlanAhead...
+INFO: [HD-Licensing 2] Releasing license: PlanAhead

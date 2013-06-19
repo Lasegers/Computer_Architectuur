@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/MIPS_PROCESSOR.xst" -ofn "F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/MIPS_PROCESSOR.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MIPS_PROCESSOR.ucf -p xc6slx45-csg324-3 "MIPS_PROCESSOR.ngc" MIPS_PROCESSOR.ngd  
+xst -intstyle ise -ifn "F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/MIPS_PROCESSOR.xst" -ofn "F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/MIPS_PROCESSOR.syr" 
+xst -intstyle ise -ifn "F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/MIPS_PROCESSOR.xst" -ofn "F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/MIPS_PROCESSOR.syr" 

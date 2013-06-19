@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1 (64-bit)
+# Build 117799 by hdbuild on Thu Feb 17 11:42:17 PST 2011
+# Start of session at: Wed Feb 20 16:00:19 2013
+# Process ID: 6956
+# Log file: F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/planAhead_run_1/planAhead.log
+# Journal file: F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui -source {F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/pa.fromNetlist.tcl}
+exit

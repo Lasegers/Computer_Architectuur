@@ -1,0 +1,27 @@
+Running: C:\Xilinx\13.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/MIPS_PROCESSOR_tb_isim_beh.exe -prj F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/MIPS_PROCESSOR_tb_beh.prj work.MIPS_PROCESSOR_tb 
+ISim O.40d (signature 0xc4ca3437)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/PC4.vhd" into library work
+Parsing VHDL file "F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/PC.vhd" into library work
+Parsing VHDL file "F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/IMem.vhd" into library work
+Parsing VHDL file "F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/MIPS_TOP_VHDL.vhd" into library work
+Parsing VHDL file "F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/MIPS_PROCESSOR_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Compiling architecture behavioral of entity pc [pc_default]
+Compiling architecture behavioral of entity imem [imem_default]
+Compiling architecture behavioral of entity pc4 [pc4_default]
+Compiling architecture behavioral of entity mips_processor [mips_processor_default]
+Compiling architecture behavior of entity mips_processor_tb
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 13 VHDL Units
+Built simulation executable F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/MIPS_PROCESSOR_tb_isim_beh.exe
+Fuse Memory Usage: 19268 KB
+Fuse CPU Usage: 202 ms

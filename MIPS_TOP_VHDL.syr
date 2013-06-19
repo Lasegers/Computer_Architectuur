@@ -1,0 +1,488 @@
+Release 13.1 - xst O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: MIPS_TOP_VHDL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MIPS_TOP_VHDL.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MIPS_TOP_VHDL"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : MIPS_TOP_VHDL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "F:\EHB\Courses\Computer architectuur\FPGA\MIPS\MIPS\PC4.vhd" into library work
+Parsing entity <PC4>.
+Parsing architecture <Behavioral> of entity <pc4>.
+Parsing VHDL file "F:\EHB\Courses\Computer architectuur\FPGA\MIPS\MIPS\PC.vhd" into library work
+Parsing entity <PC>.
+Parsing architecture <Behavioral> of entity <pc>.
+Parsing VHDL file "F:\EHB\Courses\Computer architectuur\FPGA\MIPS\MIPS\IMem.vhd" into library work
+Parsing entity <IMem>.
+Parsing architecture <Behavioral> of entity <imem>.
+Parsing VHDL file "F:\EHB\Courses\Computer architectuur\FPGA\MIPS\MIPS\MIPS_TOP_VHDL.vhd" into library work
+Parsing entity <MIPS_TOP_VHDL>.
+Parsing architecture <Behavioral> of entity <mips_top_vhdl>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <MIPS_TOP_VHDL> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PC> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <IMem> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PC4> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <MIPS_TOP_VHDL>.
+    Related source file is "f:/ehb/courses/computer architectuur/fpga/mips/mips/mips_top_vhdl.vhd".
+    Summary:
+	no macro.
+Unit <MIPS_TOP_VHDL> synthesized.
+
+Synthesizing Unit <PC>.
+    Related source file is "f:/ehb/courses/computer architectuur/fpga/mips/mips/pc.vhd".
+    Found 1-bit register for signal <RESET_TRIGGER>.
+    Found 32-bit register for signal <PC_OUT>.
+    Summary:
+	inferred  33 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+Synthesizing Unit <IMem>.
+    Related source file is "f:/ehb/courses/computer architectuur/fpga/mips/mips/imem.vhd".
+WARNING:Xst:647 - Input <PC<31:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PC<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'myMem', unconnected in block 'IMem', is tied to its initial value.
+    Found 8x32-bit single-port Read Only RAM <Mram_myMem> for signal <myMem>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <IMem> synthesized.
+
+Synthesizing Unit <PC4>.
+    Related source file is "f:/ehb/courses/computer architectuur/fpga/mips/mips/pc4.vhd".
+    Found 32-bit adder for signal <PC_OUT> created at line 37.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <PC4> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x32-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <IMem>.
+INFO:Xst:3231 - The small RAM <Mram_myMem> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 32-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <PC>            |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <IMem> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x32-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <PCounter/PC_OUT_0> (without init value) has a constant value of 0 in block <MIPS_TOP_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PCounter/PC_OUT_1> (without init value) has a constant value of 0 in block <MIPS_TOP_VHDL>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <MIPS_TOP_VHDL> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MIPS_TOP_VHDL, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 31
+ Flip-Flops                                            : 31
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : MIPS_TOP_VHDL.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 99
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 28
+#      LUT3                        : 8
+#      MUXCY                       : 29
+#      VCC                         : 1
+#      XORCY                       : 30
+# FlipFlops/Latches                : 31
+#      FDPE                        : 1
+#      FDR                         : 30
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 65
+#      IBUF                        : 1
+#      OBUF                        : 64
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              31  out of  54576     0%  
+ Number of Slice LUTs:                   38  out of  27288     0%  
+    Number used as Logic:                38  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     40
+   Number with an unused Flip Flop:       9  out of     40    22%  
+   Number with an unused LUT:             2  out of     40     5%  
+   Number of fully used LUT-FF pairs:    29  out of     40    72%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          66
+ Number of bonded IOBs:                  66  out of    218    30%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 31    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.468ns (Maximum Frequency: 405.227MHz)
+   Minimum input arrival time before clock: 2.945ns
+   Maximum output required time after clock: 5.553ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.468ns (frequency: 405.227MHz)
+  Total number of paths / destination ports: 495 / 60
+-------------------------------------------------------------------------
+Delay:               2.468ns (Levels of Logic = 31)
+  Source:            PCounter/PC_OUT_2 (FF)
+  Destination:       PCounter/PC_OUT_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: PCounter/PC_OUT_2 to PCounter/PC_OUT_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              9   0.447   0.829  PCounter/PC_OUT_2 (PCounter/PC_OUT_2)
+     INV:I->O              1   0.206   0.000  PCAdder/Madd_PC_OUT_lut<2>_INV_0 (PCAdder/Madd_PC_OUT_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  PCAdder/Madd_PC_OUT_cy<2> (PCAdder/Madd_PC_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<3> (PCAdder/Madd_PC_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<4> (PCAdder/Madd_PC_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<5> (PCAdder/Madd_PC_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<6> (PCAdder/Madd_PC_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<7> (PCAdder/Madd_PC_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<8> (PCAdder/Madd_PC_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<9> (PCAdder/Madd_PC_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<10> (PCAdder/Madd_PC_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<11> (PCAdder/Madd_PC_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<12> (PCAdder/Madd_PC_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<13> (PCAdder/Madd_PC_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<14> (PCAdder/Madd_PC_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<15> (PCAdder/Madd_PC_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<16> (PCAdder/Madd_PC_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<17> (PCAdder/Madd_PC_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<18> (PCAdder/Madd_PC_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<19> (PCAdder/Madd_PC_OUT_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<20> (PCAdder/Madd_PC_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<21> (PCAdder/Madd_PC_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<22> (PCAdder/Madd_PC_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<23> (PCAdder/Madd_PC_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<24> (PCAdder/Madd_PC_OUT_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<25> (PCAdder/Madd_PC_OUT_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<26> (PCAdder/Madd_PC_OUT_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<27> (PCAdder/Madd_PC_OUT_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<28> (PCAdder/Madd_PC_OUT_cy<28>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<29> (PCAdder/Madd_PC_OUT_cy<29>)
+     MUXCY:CI->O           0   0.019   0.000  PCAdder/Madd_PC_OUT_cy<30> (PCAdder/Madd_PC_OUT_cy<30>)
+     XORCY:CI->O           2   0.180   0.000  PCAdder/Madd_PC_OUT_xor<31> (prog_counter_31_OBUF)
+     FDR:D                     0.102          PCounter/PC_OUT_31
+    ----------------------------------------
+    Total                      2.468ns (1.639ns logic, 0.829ns route)
+                                       (66.4% logic, 33.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.945ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       PCounter/RESET_TRIGGER (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to PCounter/RESET_TRIGGER
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  reset_IBUF (reset_IBUF)
+     INV:I->O              1   0.206   0.579  reset_inv1_INV_0 (reset_inv)
+     FDPE:CE                   0.322          PCounter/RESET_TRIGGER
+    ----------------------------------------
+    Total                      2.945ns (1.750ns logic, 1.195ns route)
+                                       (59.4% logic, 40.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 489 / 38
+-------------------------------------------------------------------------
+Offset:              5.553ns (Levels of Logic = 32)
+  Source:            PCounter/PC_OUT_2 (FF)
+  Destination:       prog_counter<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: PCounter/PC_OUT_2 to prog_counter<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              9   0.447   0.829  PCounter/PC_OUT_2 (PCounter/PC_OUT_2)
+     INV:I->O              1   0.206   0.000  PCAdder/Madd_PC_OUT_lut<2>_INV_0 (PCAdder/Madd_PC_OUT_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  PCAdder/Madd_PC_OUT_cy<2> (PCAdder/Madd_PC_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<3> (PCAdder/Madd_PC_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<4> (PCAdder/Madd_PC_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<5> (PCAdder/Madd_PC_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<6> (PCAdder/Madd_PC_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<7> (PCAdder/Madd_PC_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<8> (PCAdder/Madd_PC_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<9> (PCAdder/Madd_PC_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<10> (PCAdder/Madd_PC_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<11> (PCAdder/Madd_PC_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<12> (PCAdder/Madd_PC_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<13> (PCAdder/Madd_PC_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<14> (PCAdder/Madd_PC_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<15> (PCAdder/Madd_PC_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<16> (PCAdder/Madd_PC_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<17> (PCAdder/Madd_PC_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<18> (PCAdder/Madd_PC_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<19> (PCAdder/Madd_PC_OUT_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<20> (PCAdder/Madd_PC_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<21> (PCAdder/Madd_PC_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<22> (PCAdder/Madd_PC_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<23> (PCAdder/Madd_PC_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<24> (PCAdder/Madd_PC_OUT_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<25> (PCAdder/Madd_PC_OUT_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<26> (PCAdder/Madd_PC_OUT_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<27> (PCAdder/Madd_PC_OUT_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<28> (PCAdder/Madd_PC_OUT_cy<28>)
+     MUXCY:CI->O           1   0.019   0.000  PCAdder/Madd_PC_OUT_cy<29> (PCAdder/Madd_PC_OUT_cy<29>)
+     MUXCY:CI->O           0   0.019   0.000  PCAdder/Madd_PC_OUT_cy<30> (PCAdder/Madd_PC_OUT_cy<30>)
+     XORCY:CI->O           2   0.180   0.616  PCAdder/Madd_PC_OUT_xor<31> (prog_counter_31_OBUF)
+     OBUF:I->O                 2.571          prog_counter_31_OBUF (prog_counter<31>)
+    ----------------------------------------
+    Total                      5.553ns (4.108ns logic, 1.445ns route)
+                                       (74.0% logic, 26.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.468|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.42 secs
+ 
+--> 
+
+Total memory usage is 243228 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

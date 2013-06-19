@@ -1,0 +1,22 @@
+ISim log file
+Running: F:\EHB\Courses\Computer architectuur\FPGA\MIPS\MIPS\MIPS_PROCESSOR_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/MIPS_PROCESSOR_tb_isim_beh.wdb 
+ISim O.40d (signature 0xc4ca3437)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 10000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /mips_processor_tb/uut/InstructionMem/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /mips_processor_tb/uut/InstructionMem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 0 ps, Instance /mips_processor_tb/uut/InstructionMem/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+ERROR: Index 8 out of bound 0 to 7. 
+ERROR: In process IMem.vhd:MemoryPC 
+ 
+INFO: Simulator is stopped.

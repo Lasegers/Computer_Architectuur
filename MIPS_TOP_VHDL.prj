@@ -1,0 +1,4 @@
+vhdl work "PC4.vhd"
+vhdl work "PC.vhd"
+vhdl work "IMem.vhd"
+vhdl work "MIPS_TOP_VHDL.vhd"
