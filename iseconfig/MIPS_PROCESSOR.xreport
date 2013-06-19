@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2013-06-19T22:07:51</DateModified>
+  <DateModified>2013-06-19T22:31:05</DateModified>
   <ModuleName>MIPS_PROCESSOR</ModuleName>
   <SummaryTimeStamp>2013-02-10T12:52:50</SummaryTimeStamp>
-  <SavedFilePath>F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/iseconfig/MIPS_PROCESSOR.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS\</ImplementationReportsDirectory>
+  <SavedFilePath>F:/Git/Comp Arch/iseconfig/MIPS_PROCESSOR.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>F:/Git/Comp Arch\</ImplementationReportsDirectory>
   <DateInitialized>2013-02-02T14:52:23</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

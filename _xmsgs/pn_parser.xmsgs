@@ -8,19 +8,7 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/IMem.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/MIPS_TOP_VHDL.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/PC.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/PC4.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/Segment_8_Driver.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/Git/Comp Arch/PC.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
