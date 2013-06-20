@@ -37,7 +37,7 @@ begin
 		type 			memory 	is array(0 to 7) of word;
 		variable 	myMem:	memory	:=	
 		(X"00000001", X"00000010", X"00000100", X"00001000",
-		 X"00010000", X"00100000", X"01000000", X"10000000");		
+		 X"00010000", X"00100000", X"01000000", X"10000011");		
 	begin		
 		Instruction<=myMem(conv_integer(PC(31 downto 2)));
 	end process MemoryPC;
