@@ -22,7 +22,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 ----------------------------------------------------------------------------------
-entity PC is 	
+entity PC is 	    
 port(
 	Clk:	IN	STD_LOGIC;
 	Reset:	IN	STD_LOGIC; 		

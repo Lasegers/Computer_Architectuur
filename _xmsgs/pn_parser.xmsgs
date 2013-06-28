@@ -8,7 +8,11 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<<<<<<< HEAD
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/Git/Comp Arch/IMem.vhd&quot; into library work</arg>
+=======
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;F:/Git/Comp Arch/PC.vhd&quot; into library work</arg>
+>>>>>>> refs/heads/Input_Output
 </msg>
 
 </messages>
