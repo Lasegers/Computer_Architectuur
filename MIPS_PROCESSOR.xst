@@ -2,7 +2,6 @@ set -tmpdir "xst/projnav.tmp"
 set -xsthdpdir "xst"
 run
 -ifn MIPS_PROCESSOR.prj
--ifmt mixed
 -ofn MIPS_PROCESSOR
 -ofmt NGC
 -p xc6slx45-3-csg324

@@ -3,11 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Wed Feb 20 16:00:04 2013">
+<application name="pn" timeStamp="Fri Jun 28 15:06:30 2013">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="DEA97B77670B4605B74E03F7BEBD1FFF" type="project"/>
 <property name="ProjectIteration" value="0" type="project"/>
-<property name="ProjectFile" value="F:/EHB/Courses/Computer architectuur/FPGA/MIPS/MIPS/MIPS.xise" type="project"/>
+<property name="ProjectFile" value="F:/Git/Comp Arch/MIPS.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2013-01-18T21:03:42" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
@@ -39,7 +39,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_DevSpeed" value="-3" type="design"/>
 <property name="PROP_PreferredLanguage" value="Verilog" type="design"/>
 <property name="FILE_UCF" value="1" type="source"/>
-<property name="FILE_VHDL" value="8" type="source"/>
+<property name="FILE_VHDL" value="9" type="source"/>
 </section>
 </application>
 </document>
