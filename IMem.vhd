@@ -40,6 +40,7 @@ begin
 		X"20c60001", X"00a4482a", X"1520fffc", X"00000000");
 	begin		
 		Instruction<=myMem(conv_integer(PC(31 downto 2)));
+		-- return the current instruction according to PC
 	end process MemoryPC;
 	-------------------------------------------------------------------------------	
 end Behavioral;
